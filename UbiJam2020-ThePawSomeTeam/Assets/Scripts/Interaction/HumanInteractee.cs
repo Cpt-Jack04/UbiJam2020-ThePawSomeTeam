@@ -16,6 +16,8 @@ public class HumanInteractee : MonoBehaviour, IAmInteractable
     {
         interactionPrompt = GetComponentInChildren<Canvas>();
         ShowPrompt(false);
+
+        conversation.Initialize();
     }
 
     public void ShowPrompt(bool shouldShow)
