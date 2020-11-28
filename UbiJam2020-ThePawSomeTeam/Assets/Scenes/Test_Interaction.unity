@@ -284,7 +284,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &180769521
 MonoBehaviour:
@@ -1477,7 +1477,7 @@ PrefabInstance:
     - target: {fileID: 5293908322601003714, guid: 00ba2cf439015fb44abde50fec3dcb12,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5293908322601003714, guid: 00ba2cf439015fb44abde50fec3dcb12,
         type: 3}
@@ -1627,7 +1627,7 @@ PrefabInstance:
     - target: {fileID: 3762882586659553841, guid: 3809e8856bf38be4aa34158185aa5b5e,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3762882586659553841, guid: 3809e8856bf38be4aa34158185aa5b5e,
         type: 3}
@@ -1647,7 +1647,7 @@ PrefabInstance:
     - target: {fileID: 3762882586659553844, guid: 3809e8856bf38be4aa34158185aa5b5e,
         type: 3}
       propertyPath: m_Name
-      value: Human
+      value: Damsel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3809e8856bf38be4aa34158185aa5b5e, type: 3}
