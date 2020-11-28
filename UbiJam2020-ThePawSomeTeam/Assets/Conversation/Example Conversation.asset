@@ -14,10 +14,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   with: 0
   converstationStarter: This is an example conversation. Please make a choice.
-  playerChoices:
-  - choiceText: Meow
-    responseText: You choose to Meow. Thank you.
-  - choiceText: '*Pur*'
-    responseText: You choose to Pur. Thank you.
-  - choiceText: '*Paw*'
-    responseText: You choose to Paw. Thank you.
+  choicePoints:
+  - pointTexts:
+    - This will be there first sentence displayed.
+    - Then the second sentence will be shown.
+    - When the final line is show, the choices will appear.
+    choices:
+    - choiceText: You can make many choices.
+      responseText: This is an example respone.
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: You can pick this one instead.
+      responseText: And you get a cooler respone.
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - Hello, welcome to apple bees.
+    - Would you like apples or bees?
+    choices:
+    - choiceText: Apples
+      responseText: Here you go.
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: Bees?
+      responseText: THEY SAID BEES!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
