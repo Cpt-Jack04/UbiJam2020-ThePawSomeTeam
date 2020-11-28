@@ -3,13 +3,10 @@
 public class CharacterMovement : MonoBehaviour
 {
     private Rigidbody2D rb = null;
+    private SpriteRenderer sr = null;
 
     [SerializeField] private float moveDistPerSec = 10f;
-
-    [Space]
-
-    [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private LayerMask isGround = 0;
+    private bool lastMovedLeft = false;
 
     public bool CanMove { get; set; } = true;
     public bool CanJump { get; set; } = true;
@@ -18,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponentInChildren<SpriteRenderer>();
     }
 
     public void MoveHorizontally(float direction)
@@ -27,17 +25,14 @@ public class CharacterMovement : MonoBehaviour
             Vector2 targetPos = transform.position + Vector3.right * moveDistPerSec * direction * Time.fixedDeltaTime;
 
             rb.MovePosition(targetPos);
+            if ((direction == -1 && !lastMovedLeft) || (direction == 1 && lastMovedLeft))
+                Flip();
         }
     }
-/*
-    public void Jump()
-    {
-        if (CanJump)
-        {
-            rb.AddForce(Vector2.up);
 
-            CanJump = false;
-            IsLanded = false;
-        }
-    }*/
+    private void Flip()
+    {
+        lastMovedLeft = !lastMovedLeft;
+        sr.flipX = lastMovedLeft;
+    }
 }
