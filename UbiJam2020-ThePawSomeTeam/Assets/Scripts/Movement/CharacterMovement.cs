@@ -26,6 +26,8 @@ public class CharacterMovement : MonoBehaviour
         {
             Vector2 targetPos = transform.position + Vector3.right * moveDistPerSec * direction * Time.deltaTime;
 
+            //Debug.Log(moveDistPerSec * direction * Time.deltaTime);
+
             rb.MovePosition(targetPos);
         }
     }
