@@ -15,7 +15,7 @@ MonoBehaviour:
   with: 1
   choicePoints:
   - pointTexts:
-    - /emote:Neutral/lHello
+    - Hello
     - I am sad
     choices:
     - choiceText: Meow
