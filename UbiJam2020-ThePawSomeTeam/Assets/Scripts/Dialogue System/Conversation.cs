@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable, CreateAssetMenu(fileName = "New Conversation", menuName = "Conversation")]
 public class Conversation : ScriptableObject
 {
+    
     [SerializeField] private Participant with = Participant.Damsel;
     [SerializeField, TextArea(1, 10)] private string converstationStarter = "";
 
