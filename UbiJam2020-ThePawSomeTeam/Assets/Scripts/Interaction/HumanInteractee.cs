@@ -6,7 +6,7 @@ public class HumanInteractee : MonoBehaviour, IAmInteractable
 
     [Space]
 
-    [SerializeField] private Mood currentMood = Mood.Sad;
+    [SerializeField] private Mood currentMood = Mood.Neutral;
 
     private Canvas interactionPrompt = null;
 
@@ -46,5 +46,7 @@ public class HumanInteractee : MonoBehaviour, IAmInteractable
     {
         Sad,
         Happy,
+        Neutral,
+        Blushing
     }
 }
