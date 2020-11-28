@@ -8,14 +8,12 @@ public class Conversation : ScriptableObject
 {
     
     [SerializeField] private Participant with = Participant.Damsel;
-    [SerializeField, TextArea(1, 10)] private string converstationStarter = "";
 
     [Space]
 
     [SerializeField] private List<ChoicePoint> choicePoints = new List<ChoicePoint>();
 
     public Participant With => with;
-    public string ConverstationStarter => converstationStarter;
     public List<ChoicePoint> ChoicePoints => choicePoints;
     public ChoicePoint CurrentChoicePoint => choicePoints[CurrentPointIndex];
     public int CurrentPointIndex { get; private set; } = 0;
@@ -46,7 +44,7 @@ public class Conversation : ScriptableObject
         Damsel,
         Knight,
         OldWoman,
-        Priest,
+        PlagueCat,
     }
 
     [System.Serializable]

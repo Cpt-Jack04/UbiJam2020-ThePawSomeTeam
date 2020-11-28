@@ -12,12 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ae8f6485879d5e419975061607bf866, type: 3}
   m_Name: Example Knight
   m_EditorClassIdentifier: 
-  with: 0
-  converstationStarter: Hello there
-  playerChoices:
-  - choiceText: General Kenobi
-    responseText: UwU
-  - choiceText: What?
-    responseText: /emote:(Neutral)/OwO, UwU
-  - choiceText: Hello there
-    responseText: TwT
+  with: 1
+  choicePoints:
+  - pointTexts:
+    - /emote:Neutral/lHello
+    - I am sad
+    choices:
+    - choiceText: Meow
+      responseText: /emote:Blushing/Thank you
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
