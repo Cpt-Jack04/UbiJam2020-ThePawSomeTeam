@@ -25,17 +25,17 @@ PrefabInstance:
     - target: {fileID: 528864885004804489, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 528864885004804489, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 528864885004804489, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 528864885004804489, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
@@ -152,7 +152,12 @@ PrefabInstance:
         type: 3}
       propertyPath: conversation
       value: 
-      objectReference: {fileID: 11400000, guid: a7ab7523cbd55e64fb2ccf4d778353aa,
+      objectReference: {fileID: 11400000, guid: 59a5da5030872914f9216962c1d8e2e3,
         type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: currentMood
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a7877d12811cf47bd17e91a46bc103, type: 3}
