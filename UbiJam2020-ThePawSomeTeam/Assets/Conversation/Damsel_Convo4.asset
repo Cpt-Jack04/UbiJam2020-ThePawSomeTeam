@@ -15,5 +15,5 @@ MonoBehaviour:
   with: 0
   choicePoints:
   - pointTexts:
-    - Thank you so much for delievering this to me!!!
+    - 'Nirvana: Thank you so much for delivering this to me!!!'
     choices: []

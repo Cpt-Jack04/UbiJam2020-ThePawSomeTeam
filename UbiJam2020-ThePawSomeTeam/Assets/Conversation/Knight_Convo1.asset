@@ -19,52 +19,66 @@ MonoBehaviour:
     - /emote:None/Could this perhaps be Sir Lancelot?
     choices:
     - choiceText: I just met your lady friend, who mentioned a curse. Tell me more!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow5/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: How are you going to pet me while your while holding a shield and
         sword?
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow5/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: Are you the foolish mortal that the other villagers look up to?
         There can only be one favorite!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow5/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
   - pointTexts:
     - /emote:None/The knight flinches in suprise and was about to point his sword
       at you...until he realizes you're just a cat.
-    - A cat! Of course! Just as expected.
+    - 'Sir Lancelot: A cat! Of course! Just as expected.'
     - /emote:None/He returns to his previous stance, ignoring you.
     choices:
     - choiceText: ...are you ignoring me right now?
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow6/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: Did you just turn away from me? How rude! I don't even want to
         be petted by you anymore!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow6/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: A display of authority. Impressive. But I have mastered the ability
         to ignore others around me as well!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow6/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
   - pointTexts:
     - /emote:None/The wind suddenly blows, and the knight notices Lady Nirvana's
       scent on you. He turns to you again, his eyes softer this time.
-    - I know this scent! You must have passed my dear Lady Nirvana. Won't you give
-      her my favorite handkerchief? I always wrap it around my sword hand for good
-      luck.
+    - 'Sir Lancelot: I know this scent! You must have passed my dear Lady Nirvana.
+      Won''t you give her my favorite handkerchief? I always wrap it around my sword
+      hand for good luck.'
     - /emote:None/The knight lets go of his shield and quickly loosens the fabric
       around his hand. Just in case someone tries to take it from you, he hides it
       under your cloak.
+    - '/emote:None/He then returns to his previous stance yet again and waits for
+      you to accomplish your mission. '
     choices: []
