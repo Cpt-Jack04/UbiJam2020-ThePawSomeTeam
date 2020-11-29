@@ -17,21 +17,27 @@ MonoBehaviour:
   - pointTexts:
     - /emote:None/As you walk towards Sir Lancelot, he turns to you with a hopeful
       expression.
-    - Did you manage to givve my lady the handkerchief?
+    - 'Sir Lancelot: Did you manage to give my lady the handkerchief?'
     choices:
     - choiceText: I did. She finally stopped crying!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow1/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: I don't know. Nobody gave me a good cuddle yet. Disappointing.
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow1/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: She has accepted me as her primary worshiping deity. Now you should
         convert as well.
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow1/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
@@ -39,9 +45,11 @@ MonoBehaviour:
     - /emote:None/You wiggle around to show Sir Lancelot that the cloth is gone.
       The movement also causes Nirvana's perfume to spread, which makes Sir Lancelot
       blush.
-    - /emote:Blushing/Oh, thank you! On my honor as a knight, I will not forget this!
-    - /emote:None/Just like before, the hear-shaped necklace glows again!
-    - Now, if only I could leave my post and challenge the evil creature in the east
-      woods! the the curse would be lifted, and I could finally see my dear Nirvanna
-      again...
+    - '/emote:Blushing/Sir Lancelot: Oh, thank you! On my honor as a knight, I will
+      not forget this!'
+    - /emote:None/Just like before, the heart-shaped necklace glows again!
+    - 'Sir Lancelot: Now, if only I could leave my post and challenge the evil creature
+      in the east woods! '
+    - 'Sir Lancelot: Then the curse would be lifted, and I could finally see my dear
+      Nirvanna again...'
     choices: []

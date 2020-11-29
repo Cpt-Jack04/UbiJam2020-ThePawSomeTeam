@@ -8,7 +8,6 @@ public class StandardInputReader : MonoBehaviour
     private ICanInteract interacter = null;
 
     private float horizontalMovementInput = 0f;
-    private float audioInput = 0f;
 
     private void Awake()
     {

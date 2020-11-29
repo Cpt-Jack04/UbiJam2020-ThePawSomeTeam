@@ -15,5 +15,5 @@ MonoBehaviour:
   with: 1
   choicePoints:
   - pointTexts:
-    - Did you deliver the handkerchief?
+    - 'Sir Lancelot: Did you deliver the handkerchief?'
     choices: []

@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae8f6485879d5e419975061607bf866, type: 3}
+  m_Name: PlagueCat_Convo1
+  m_EditorClassIdentifier: 
+  with: 3
+  choicePoints:
+  - pointTexts:
+    - "/emote:Neutral/You quickly notice the sound of nature growing silent.\r Something
+      is scaring everything away. Or rather someone!"
+    - "/emote:Normal/Plaque Cat: Tis I, the evil plaque cat! Who are you, to so rudely
+      interrupted my reign of agony!\r "
+    - '/emote:Blushing/Plaque Cat: I can sense two humans being filled with joy.
+      Outrageous! A pure Cat-astrophe!'
+    choices:
+    - choiceText: "So you\xB4re the one who unleashed the cursed! The reason why
+        the villagers can\xB4t spend time together!"
+      responseText: '/sound:Meow7/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: "You think you had a bad day? NOBODY gave me any cuddles! That\xB4s
+        the real outrage of today!"
+      responseText: '/sound:Meow7/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: "Thou art the last obstacle in my path, in obtaining a godly status
+        from the villagers!\r I, the most amazing feline in the world, will destroy
+        you!"
+      responseText: '/sound:Meow7/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - "/emote:Blushing/Plaque Cat: You dare speak back at me!\r A Fur-midable foe,
+      it seems! But no matter, I shall unleash my deadliest curse upon you! Then
+      you will know true mew-sery!"
+    - "/emote:Neutral/You notice that the evil plaque cat goes on and on with their
+      monologue.\r This is your chance to strike!"
+    choices:
+    - choiceText: Use the heart-shaped necklace filled with love!
+      responseText: '/sound:Magicmeow/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - /emote:Neutral/The necklace shines brightly and blasts a ray of love against
+      the evil plaque cat!
+    - '/emote:Blushing/Plaque Cat: Noooooooo! My paw-some plaaannn of conquering
+      the worllddd!'
+    - "/emote:None/The evil plaque cat falls to the ground, overpowered by the love
+      you\xB4ve gathered and spread!"
+    choices:
+    - choiceText: Time to go back to granny and tell her about what happened!
+      responseText: '/sound:Meow1/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: I better get a yearly cuddle coupon for all this work.
+      responseText: '/sound:Meow1/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: As expected, thou were no match for me - the new worshiping deity
+        of this realm!
+      responseText: '/sound:Meow1/
+
+        /emote:Neutral/Meow!'
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - /emote:Neutral/The End! Thank you for playing Catventures!
+    choices:
+    - choiceText: End Game
+      responseText: OwO
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []

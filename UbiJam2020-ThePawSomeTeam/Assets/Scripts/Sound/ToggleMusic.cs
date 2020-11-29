@@ -11,7 +11,6 @@ public class ToggleMusic : MonoBehaviour
 
     public void toggleMusic()
     {
-        print("toggle" + toggle);
         if (toggle)
         {
             audioSource.GetComponent<AudioSource>().Play();

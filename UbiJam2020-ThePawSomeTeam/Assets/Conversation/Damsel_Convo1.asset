@@ -15,37 +15,46 @@ MonoBehaviour:
   with: 0
   choicePoints:
   - pointTexts:
-    - /emote:None/As you approach the village, you notice a crying woman in a werid
+    - /emote:None/As you approach the village, you notice a crying woman in a weird
       theatrical pose.
     - /emote:None/She doesn't notice you. Not yet.
     choices:
     - choiceText: You smell like granny. Are you the niece she was talking about?
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow3/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: Are you just going to stand around or are you going to pet me?
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow3/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: As expected, the mortals can't even survive a day without my presence.
         What is it child?
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow3/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
   - pointTexts:
     - /emote:None/The woman twitches in suprise and glances down at you.
-    - /emote:Sad/Oh! What an adorable creature! I would reach down to pet you, but...
+    - '/emote:Sad/Nirvana: Oh! What an adorable creature! I would reach down to pet
+      you, but...'
     - /emote:None/Her words get interrupted by a new wave of cries.
-    - /emote:Sad/But ever since the curse appeared, the mayor ordered us to isolate
-      ourselves and I haven't been able to see my dear Sir Lancelot! I miss him terribly!
-      My heart aches from the separation!
+    - '/emote:Sad/Nirvana: But ever since the curse appeared, the mayor ordered us
+      to isolate ourselves and I haven''t been able to see my dear Sir Lancelot! '
+    - '/emote:Sad/Nirvana: I miss him terribly! My heart aches from the separation!'
     choices:
     - choiceText: I would feel the same way if someone would try to separate me from
         my food.
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow4/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls:
@@ -61,7 +70,9 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
     - choiceText: I mean, you could still pet me regardless. But okay, your loss.
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow4/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls:
@@ -77,7 +88,9 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
     - choiceText: I wonder if other mortals worship Sir Lancelot. A competitor, perhaps!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow4/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls:
@@ -93,8 +106,8 @@ MonoBehaviour:
               m_BoolArgument: 0
             m_CallState: 2
   - pointTexts:
-    - /emote:Sad/I know! If only I had a piece of him that I could hold on to until
-      this curse is over...
+    - '/emote:Sad/Nirvana: I know! If only I had a piece of him that I could hold
+      on to until this curse is over...'
     - /emote:None/Nirvana continues her weeping and doesn't seem to notice you anymore.
       Perhaps you should find Sir Lancelot to find out more about the curse.
     choices: []
