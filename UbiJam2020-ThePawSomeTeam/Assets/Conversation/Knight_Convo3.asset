@@ -17,7 +17,7 @@ MonoBehaviour:
   - pointTexts:
     - /emote:None/As you walk towards Sir Lancelot, he turns to you with a hopeful
       expression.
-    - 'Sir Lancelot: Did you manage to givve my lady the handkerchief?'
+    - 'Sir Lancelot: Did you manage to give my lady the handkerchief?'
     choices:
     - choiceText: I did. She finally stopped crying!
       responseText: '/sound:Meow1/
