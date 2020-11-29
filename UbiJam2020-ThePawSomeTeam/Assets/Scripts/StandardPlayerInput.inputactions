@@ -76,6 +76,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "Press"
+                },
+                {
+                    "name": "ToggleMusic",
+                    "type": "Button",
+                    "id": "a0ce870d-1d40-4358-8bca-2a9f2d067341",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -230,6 +238,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Audioinput7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "7c804571-8cfc-46f2-84f8-781c3e882495",
+                    "path": "<Keyboard>/m",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ToggleMusic",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
