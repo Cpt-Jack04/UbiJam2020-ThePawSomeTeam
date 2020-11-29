@@ -2,24 +2,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ToggleCredits : MonoBehaviour
 {
-    public static Action showCredits = delegate {  };
-    private bool triggere = false;
-    
-    public static void invokeCredits()
+    [SerializeField] private Conversation lastConvo = null;
+
+    private Canvas canvas = null;
+
+    private void Awake()
     {
-        showCredits?.Invoke();
+        canvas = GetComponent<Canvas>();
+        canvas.enabled = false;
     }
 
-    public void triggered()
+    private void OnEnable()
     {
-        if (!triggere)
-        {
-            GetComponent<Canvas>().enabled = true;
-            triggere = true;
-        }
-        
+        lastConvo.ChoicePoints[lastConvo.ChoicePoints.Count - 1].Choices[0].ChoiceMade.AddListener(() => FlipEnabaled());
+    }
+
+    private void OnDisable()
+    {
+        lastConvo.ChoicePoints[lastConvo.ChoicePoints.Count - 1].Choices[0].ChoiceMade.RemoveListener(() => FlipEnabaled());
+    }
+
+    public void FlipEnabaled()
+    {
+        canvas.enabled = !canvas.enabled;
+    }
+
+    public void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene("StartScene");
     }
 }
