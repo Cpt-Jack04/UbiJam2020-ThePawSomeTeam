@@ -7,11 +7,75 @@
             "actions": [
                 {
                     "name": "Horizontal Movement",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "06d06a7f-d4a4-4d62-89b6-fc01a8b3c72e",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": "Hold"
+                },
+                {
+                    "name": "Interact",
+                    "type": "Button",
+                    "id": "ffdc9880-90b0-439c-a722-5d77945134d8",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "AudioInput1",
+                    "type": "Button",
+                    "id": "f8c9053d-f0b9-485b-a99c-4c217be45240",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "AudioInput2",
+                    "type": "Button",
+                    "id": "8706d51e-a57b-4888-a88b-5e813897932c",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "AudioInput3",
+                    "type": "Button",
+                    "id": "01f188e5-6baa-4746-b0ec-766271d603ef",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "AudioInput4",
+                    "type": "Button",
+                    "id": "a1face68-778a-439a-9018-6a28181da3f0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "AudioInput5",
+                    "type": "Button",
+                    "id": "d7e8b3f8-3d30-427b-b8df-7ce5bdb8ec9b",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "AudioInput6",
+                    "type": "Button",
+                    "id": "42fbea88-f61a-4614-b2c5-93243d46dc81",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
+                },
+                {
+                    "name": "Audioinput7",
+                    "type": "Button",
+                    "id": "fd162702-80f1-4091-b7dd-2e483dbd3b52",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "Press"
                 }
             ],
             "bindings": [
@@ -47,6 +111,127 @@
                     "action": "Horizontal Movement",
                     "isComposite": false,
                     "isPartOfComposite": true
+                },
+                {
+                    "name": "Arrow Keys",
+                    "id": "5ee9cba4-3660-4f37-877a-9467123cdcdf",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Horizontal Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "negative",
+                    "id": "a150b3f7-55d7-456b-b0e7-249e054a20b1",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Horizontal Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "positive",
+                    "id": "0134c2f2-f0e0-40b9-ae14-b77f812563ec",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Horizontal Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "7280d919-dddb-4acd-8a90-81860347e479",
+                    "path": "<Keyboard>/e",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "KeyboardMouse",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "1095794a-7fcc-4d14-9425-d13cde626a61",
+                    "path": "<Keyboard>/1",
+                    "interactions": "Press",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AudioInput1",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "435ad673-4f33-4a38-bb6b-f40d4e4173d4",
+                    "path": "<Keyboard>/2",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AudioInput2",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "73bbd269-adb7-4b76-b24a-84d8a3e2864a",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AudioInput3",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "2a18d321-4dfc-4014-a1f1-ca533448e9c9",
+                    "path": "<Keyboard>/4",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AudioInput4",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "84ceac88-fa60-426d-8ed5-802067ca83db",
+                    "path": "<Keyboard>/5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AudioInput5",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "4b660656-de3a-4c5e-bb1f-f76b2dbfa9eb",
+                    "path": "<Keyboard>/6",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AudioInput6",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "243e226e-5737-46ec-bad2-d20603cdd0d7",
+                    "path": "<Keyboard>/7",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Audioinput7",
+                    "isComposite": false,
+                    "isPartOfComposite": false
                 }
             ]
         }

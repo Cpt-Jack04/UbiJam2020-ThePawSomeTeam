@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae8f6485879d5e419975061607bf866, type: 3}
+  m_Name: Knight_Convo1
+  m_EditorClassIdentifier: 
+  with: 1
+  choicePoints:
+  - pointTexts:
+    - /emote:None/You notice a grumpy knight, mumbling to himself.
+    - /emote:None/Could this perhaps be Sir Lancelot?
+    choices:
+    - choiceText: I just met your lady friend, who mentioned a curse. Tell me more!
+      responseText: /emote:None/Meow!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: How are you going to pet me while your while holding a shield and
+        sword?
+      responseText: /emote:None/Meow!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: Are you the foolish mortal that the other villagers look up to?
+        There can only be one favorite!
+      responseText: /emote:None/Meow!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - /emote:None/The knight flinches in suprise and was about to point his sword
+      at you...until he realizes you're just a cat.
+    - A cat! Of course! Just as expected.
+    - /emote:None/He returns to his previous stance, ignoring you.
+    choices:
+    - choiceText: ...are you ignoring me right now?
+      responseText: /emote:None/Meow!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: Did you just turn away from me? How rude! I don't even want to
+        be petted by you anymore!
+      responseText: /emote:None/Meow!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: A display of authority. Impressive. But I have mastered the ability
+        to ignore others around me as well!
+      responseText: /emote:None/Meow!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - /emote:None/The wind suddenly blows, and the knight notices Lady Nirvana's
+      scent on you. He turns to you again, his eyes softer this time.
+    - I know this scent! You must have passed my dear Lady Nirvana. Won't you give
+      her my favorite handkerchief? I always wrap it around my sword hand for good
+      luck.
+    - /emote:None/The knight lets go of his shield and quickly loosens the fabric
+      around his hand. Just in case someone tries to take it from you, he hides it
+      under your cloak.
+    choices: []

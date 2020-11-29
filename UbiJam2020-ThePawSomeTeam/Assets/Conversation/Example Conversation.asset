@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ae8f6485879d5e419975061607bf866, type: 3}
+  m_Name: Example Conversation
+  m_EditorClassIdentifier: 
+  with: 0
+  converstationStarter: This is an example conversation. Please make a choice.
+  choicePoints:
+  - pointTexts:
+    - This will be there first sentence displayed.
+    - Then the second sentence will be shown.
+    - When the final line is show, the choices will appear.
+    choices:
+    - choiceText: You can make many choices.
+      responseText: This is an example respone.
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: You can pick this one instead.
+      responseText: And you get a cooler respone.
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+  - pointTexts:
+    - Hello, welcome to apple bees.
+    - Would you like apples or bees?
+    choices:
+    - choiceText: Apples
+      responseText: Here you go.
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
+    - choiceText: Bees?
+      responseText: THEY SAID BEES!
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
