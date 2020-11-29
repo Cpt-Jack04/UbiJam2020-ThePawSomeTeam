@@ -10,7 +10,7 @@ PrefabInstance:
     - target: {fileID: 528864885004804489, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 26.69
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 528864885004804489, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
@@ -150,9 +150,61 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
         type: 3}
+      propertyPath: conversations.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: continueAfterTheseConvos.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
       propertyPath: conversation
       value: 
-      objectReference: {fileID: 11400000, guid: a7ab7523cbd55e64fb2ccf4d778353aa,
+      objectReference: {fileID: 11400000, guid: e83f4bdeb0ec0684584c18c5c1f63d9f,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: conversations.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e83f4bdeb0ec0684584c18c5c1f63d9f,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: conversations.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: b1cf0d5fde3dd924e9ace67c8065c1ee,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: continueAfterTheseConvos.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: e83f4bdeb0ec0684584c18c5c1f63d9f,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: continueAfterTheseConvos.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: e9eb79139ad44fc42bcabb899abaf980,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: conversations.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ceedd830a0465942a8b8e69fc593f75,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: conversations.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4f7d18c7e0b27074eafb1987f88fa8b6,
+        type: 2}
+    - target: {fileID: 9098644097173190055, guid: 36a7877d12811cf47bd17e91a46bc103,
+        type: 3}
+      propertyPath: continueAfterTheseConvos.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ceedd830a0465942a8b8e69fc593f75,
         type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36a7877d12811cf47bd17e91a46bc103, type: 3}
