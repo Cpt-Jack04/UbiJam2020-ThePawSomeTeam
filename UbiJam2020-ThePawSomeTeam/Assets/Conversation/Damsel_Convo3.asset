@@ -18,26 +18,32 @@ MonoBehaviour:
     - /emote:None/You approach Nirvana, who is still crying out her sorrows.
     choices:
     - choiceText: Please pause your crying for a second. I have something for you.
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow2/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: Let's make a deal. I give you the handkerchief, and you give me
         some cuddles.
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow2/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
     - choiceText: Your knight has submitted to me. It's time you worship me too!
-      responseText: /emote:None/Meow!
+      responseText: '/sound:Meow2/
+
+        /emote:None/Meow!'
       ChoiceMade:
         m_PersistentCalls:
           m_Calls: []
   - pointTexts:
     - /emote:None/While moving around, Nirvana catches a glimpse of the handkerchief. 
       Her eyes sparkle immediately as she reaches out for it.
-    - Oh, what joy you've brought me! Thank you so much! Please, let him know that
-      I'll keep it safe!
+    - 'Nirvana: Oh, what joy you''ve brought me! Thank you so much! Please, let him
+      know that I''ll keep it safe!'
     - /emote:None/After radiating pure joy, the heart necklace suddenly glows! But
-      only half of it. Time to let Sir Lancelot know that his gift was well recieved.
+      only half of it. Time to let Sir Lancelot know that his gift was well received.
     choices: []

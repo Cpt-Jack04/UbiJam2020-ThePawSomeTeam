@@ -15,5 +15,6 @@ MonoBehaviour:
   with: 1
   choicePoints:
   - pointTexts:
-    - Thank you for your help!!!
+    - "Sir Lancelot: Thank you for your help! Remember to not head to the east woods,
+      it\xB4s dangerous!"
     choices: []

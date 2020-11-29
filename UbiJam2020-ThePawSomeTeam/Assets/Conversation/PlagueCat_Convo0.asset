@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ae8f6485879d5e419975061607bf866, type: 3}
-  m_Name: Knight_Convo2
+  m_Name: PlagueCat_Convo0
   m_EditorClassIdentifier: 
-  with: 1
+  with: 3
   choicePoints:
   - pointTexts:
-    - 'Sir Lancelot: Did you deliver the handkerchief?'
+    - "/emote:Neutral/You sense a dreading energy coming out of this creature. You\xB4re
+      not ready to face it yet."
     choices: []
