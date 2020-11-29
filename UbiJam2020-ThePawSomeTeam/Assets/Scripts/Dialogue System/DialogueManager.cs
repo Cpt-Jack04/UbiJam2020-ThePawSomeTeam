@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private CatInteracter playerInteracter = null;
 
     private bool atChoicePoint = false;
+    private int currentTextPoint = 0;
 
     private void Awake()
     {
@@ -43,7 +44,9 @@ public class DialogueManager : MonoBehaviour
 
     public void ContinueConversation()
     {
-        if (atChoicePoint)
+        currentTextPoint++;
+
+        if (atChoicePoint || currentTextPoint < currentConversation.ChoicePoints[currentConversation.CurrentPointIndex].PointTexts.Count)
             dialogueDisplay.Click_Window();
         else
         {
@@ -62,6 +65,7 @@ public class DialogueManager : MonoBehaviour
     private Queue<Doublsb.Dialog.DialogData> BuildChoicePoint(int pointIndex)
     {
         atChoicePoint = true;
+        currentTextPoint = 0;
 
         Conversation.ChoicePoint pointToBuild = currentConversation.ChoicePoints[pointIndex];
         Queue<Doublsb.Dialog.DialogData> toReturn = new Queue<Doublsb.Dialog.DialogData>();
@@ -73,23 +77,31 @@ public class DialogueManager : MonoBehaviour
         }
 
         Doublsb.Dialog.DialogData pointWithChoices = new Doublsb.Dialog.DialogData(pointToBuild.PointTexts[pointToBuild.PointTexts.Count - 1], currentConversation.With.ToString());
-        for (int index = 0; index < pointToBuild.Choices.Count; index++)
+
+        if (pointToBuild.Choices.Count != 0)
         {
-            pointWithChoices.SelectList.Add(index.ToString(), pointToBuild.Choices[index].ChoiceText);
+            for (int index = 0; index < pointToBuild.Choices.Count; index++)
+            {
+                pointWithChoices.SelectList.Add(index.ToString(), pointToBuild.Choices[index].ChoiceText);
+            }
+            pointWithChoices.Callback = () =>
+            {
+                int choiceIndex = int.Parse(dialogueDisplay.Result);
+
+                string responseText = currentConversation.GetResponseToChoice(int.Parse(dialogueDisplay.Result));
+                Doublsb.Dialog.DialogData response = new Doublsb.Dialog.DialogData(responseText, currentConversation.With.ToString());
+
+                dialogueDisplay.Show(new List<Doublsb.Dialog.DialogData>() { response });
+
+                pointToBuild.Choices[choiceIndex].ChoiceMade?.Invoke();
+
+                atChoicePoint = false;
+            };
         }
-        pointWithChoices.Callback = () =>
+        else
         {
-            int choiceIndex = int.Parse(dialogueDisplay.Result);
-
-            string responseText = currentConversation.GetResponseToChoice(int.Parse(dialogueDisplay.Result));
-            Doublsb.Dialog.DialogData response = new Doublsb.Dialog.DialogData(responseText, currentConversation.With.ToString());
-
-            dialogueDisplay.Show(new List<Doublsb.Dialog.DialogData>() { response });
-
-            pointToBuild.Choices[choiceIndex].ChoiceMade?.Invoke();
-
             atChoicePoint = false;
-        };
+        }
         toReturn.Enqueue(pointWithChoices);
 
         return toReturn;

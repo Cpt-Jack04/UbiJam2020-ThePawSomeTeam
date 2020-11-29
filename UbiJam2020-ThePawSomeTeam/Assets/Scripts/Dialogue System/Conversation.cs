@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -6,6 +7,7 @@ using UnityEngine.Events;
 [System.Serializable, CreateAssetMenu(fileName = "New Conversation", menuName = "Conversation")]
 public class Conversation : ScriptableObject
 {
+    public static Action<string> ConversationCompleted = delegate { };
     
     [SerializeField] private Participant with = Participant.Damsel;
 
@@ -28,7 +30,10 @@ public class Conversation : ScriptableObject
         CurrentPointIndex++;
 
         if (CurrentPointIndex >= choicePoints.Count)
+        {
             CurrentPointIndex = 0;
+            ConversationCompleted?.Invoke(name);
+        }
     }
 
     public string GetResponseToChoice(int choiceIndex)
