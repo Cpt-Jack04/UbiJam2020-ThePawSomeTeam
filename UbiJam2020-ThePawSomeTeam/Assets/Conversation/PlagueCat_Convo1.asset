@@ -93,4 +93,9 @@ MonoBehaviour:
           m_Calls: []
   - pointTexts:
     - /emote:Neutral/The End! Thank you for playing Catventures!
-    choices: []
+    choices:
+    - choiceText: End Game
+      responseText: OwO
+      ChoiceMade:
+        m_PersistentCalls:
+          m_Calls: []
